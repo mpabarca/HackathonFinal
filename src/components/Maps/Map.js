@@ -284,7 +284,7 @@ changeTheme(image, style) {
  render (){
     return (
         <div id = "here-map"
-            style = {{ width: '100%', height: '400px', background: 'grey'}}
+            style = {{ width: '360px', height: '640px', background: 'grey'}}
         />
     )
     }
