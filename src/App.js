@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from './components/Maps/Map';
+import Route from './components/Maps/Route';
 import OwnLocation from './components/Maps/OwnLocation';
 import {companies} from './companies.json'
 
@@ -14,7 +14,6 @@ class App extends Component {
         latitude: false,
         longitude: false,
         error: null,
-        value:'0,0', 
         companies: companies
     }
   }
@@ -23,13 +22,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <OwnLocation
-                    app_id="SqgXt9Xu4ZtrdyRXBAHw"
-                    app_code="4_H5feYpb2trd0PaEdD_bQ"
-                    zoom="13"
-                    image={this.state.image }
-                    listCompany={this.state.companies}
-                />
+                
                 
                 
             </div>
@@ -40,8 +33,16 @@ class App extends Component {
 
 export default App;
 
+
 /*
-                <Map 
+                <OwnLocation
+                    app_id="SqgXt9Xu4ZtrdyRXBAHw"
+                    app_code="4_H5feYpb2trd0PaEdD_bQ"
+                    zoom="13"
+                    image={this.state.image }
+                    listCompany={this.state.companies}
+                />
+                <Route 
                     app_id="SqgXt9Xu4ZtrdyRXBAHw"
                     app_code="4_H5feYpb2trd0PaEdD_bQ"
                     zoom="10"

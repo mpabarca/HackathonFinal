@@ -103,7 +103,7 @@ class OwnLocation extends Component{
             ui.addBubble(bubble);
             }, false);
             
-            addMarkerToGroup(map, group, coord,"<div><a href=\'http://www.mcfc.co.uk\' >"+name+"</a>");
+            addMarkerToGroup(map, group, coord,"<div><a href=\'http://www.mcfc.co.uk\' >"+name+"</a>")
         }
          Object.keys(this.props.listCompany).map(key=>(
             addInfoBubble(this.map, this.props.listCompany[key].located, this.props.listCompany[key].name )

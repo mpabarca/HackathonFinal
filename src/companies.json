@@ -3,7 +3,7 @@
         {
             "name": "Papa John's",
             "located":[-33.615419, -70.683375],
-            "type":["comida"]
+            "type":"comida"
         },
         {
             "name": "Angus Chicken",
