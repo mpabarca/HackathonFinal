@@ -1,0 +1,19 @@
+{
+    "companies":[
+        {
+            "name": "Papa John's",
+            "located":[-33.615419, -70.683375],
+            "type":["comida"]
+        },
+        {
+            "name": "Angus Chicken",
+            "located":[-33.614182, -70.682580],
+            "type":["comida"]
+        },
+        {
+            "name": "Restaurante Chino",
+            "located":[-33.604679, -70.682593],
+            "type":["comida"]
+        }
+    ]
+}
