@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Map from './components/Maps/Map';
+import Signin from './components/sign in /Signin';
 
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
                     app_code="4_H5feYpb2trd0PaEdD_bQ"
                     zoom="10"
                     image={this.state.image }/>
+                    <Signin/>
             </div>
         );
     }
