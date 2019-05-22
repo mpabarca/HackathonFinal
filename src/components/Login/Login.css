@@ -1,0 +1,58 @@
+
+.background{
+    background: linear-gradient( #5BC5BC, #ffff, #fff); 
+    height: 100vh;
+    width: 100%;
+}
+.form{
+    padding-top: 310px;
+}
+
+.input{
+    
+    margin-left:10px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+}
+.input2{
+    margin-left:10px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    width: 90%;
+    
+}
+.email{
+   
+    font-family: 'Roboto', sans-serif;
+    color:gray;
+    margin-left:10px;
+   
+}
+
+.password{
+    font-family: 'Roboto', sans-serif;
+    color:gray; 
+    margin-left:10px;
+    margin-top:15px;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    color:gray; 
+    margin-bottom: 15px;
+    margin-left: 88px;
+}
+.btnLogin{
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 120px;
+}
+.btnSingin{
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 25px;
+    margin-left: 110px;
+}
