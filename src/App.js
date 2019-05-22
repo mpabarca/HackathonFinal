@@ -7,6 +7,7 @@ import {companies} from './companies.json'
 class App extends Component {
   constructor(props) {
     super(props);
+    this.getValue=this.getValue.bind(this);
     this.map=null;
     this.state = {
         image: 'normal.day',
@@ -16,6 +17,9 @@ class App extends Component {
         companies: companies
     }
   }
+  getValue(info){
+    console.log(info);
+  }
     
 
     render() {
@@ -24,9 +28,10 @@ class App extends Component {
                 <OwnLocation
                     app_id="SqgXt9Xu4ZtrdyRXBAHw"
                     app_code="4_H5feYpb2trd0PaEdD_bQ"
-                    zoom="13"
+                    zoom="15"
                     image={this.state.image }
                     listCompany={this.state.companies}
+                    update={this.getValue}
                 />
             </div>
         );
