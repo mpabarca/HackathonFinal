@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Route from './components/Maps/Route';
 import OwnLocation from './components/Maps/OwnLocation';
 import {companies} from './companies.json'
+import Signin from './components/sign in /Signin';
 
 
 class App extends Component {
@@ -33,6 +34,7 @@ class App extends Component {
                     listCompany={this.state.companies}
                     update={this.getValue}
                 />
+                <Signin/>
             </div>
         );
     }
