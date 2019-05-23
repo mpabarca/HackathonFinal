@@ -7,7 +7,7 @@
     align-items: center;
     width:100%;
     height: 40px;
-    background:#fff; 
+    background:#fff;
 
 }
 
@@ -20,5 +20,9 @@
     color:white;
 }
 .fa-plus-circle{
-    background: yellow;
+    color:#FCE76C;
+}
+
+.color{
+    color:#757575;
 }
