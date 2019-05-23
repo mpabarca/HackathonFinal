@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../css/ownlocation.css';
+import './ownlocation.css';
 import { runInThisContext } from 'vm';
 
 class OwnLocation extends Component{
@@ -131,7 +131,7 @@ class OwnLocation extends Component{
     render(){
         return(
             <div id = "here-map"
-                style = {{ width: '360px', height: '640px', background: 'grey'}}
+                style = {{ width: '290px', height: '600px', background: 'grey'}}
             />
         )
     }

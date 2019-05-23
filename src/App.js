@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Route from './components/Maps/Route';
 import OwnLocation from './components/Maps/OwnLocation';
+import './index.css';
 import {companies} from './companies.json'
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer';
 import Company from './components/formulario empresa/Company'
-
+import Signin from './components/signin/Signin';
+import CompanyProfile from './components/CompanyProfile';
 
 class App extends Component {
   constructor(props) {
@@ -28,19 +30,8 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                {/* <OwnLocation
-                    app_id="SqgXt9Xu4ZtrdyRXBAHw"
-                    app_code="4_H5feYpb2trd0PaEdD_bQ"
-                    zoom="15"
-                    image={this.state.image }
-                    listCompany={this.state.companies}
-                    update={this.getValue}
-                /> */}
-                {/* <Login/> */}
-                {/* <Navbar/> */}
-                <Company/>
-                {/* <Footer/> */}
+            <div id="App">
+                <Signin/>
             </div>
         );
     }
@@ -54,9 +45,10 @@ export default App;
                 <OwnLocation
                     app_id="SqgXt9Xu4ZtrdyRXBAHw"
                     app_code="4_H5feYpb2trd0PaEdD_bQ"
-                    zoom="13"
+                    zoom="15"
                     image={this.state.image }
                     listCompany={this.state.companies}
+                    update={this.getValue}
                 />
                 <Route 
                     app_id="SqgXt9Xu4ZtrdyRXBAHw"
