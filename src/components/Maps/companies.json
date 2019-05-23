@@ -1,0 +1,77 @@
+{
+    "companies":[
+        {
+            "name": "Plasticos Janzen",
+            "located":[-33.4030031, -70.6511853],
+            "type": "plastics",
+            "adress": "El Roble 925, Recoleta"
+        },
+        {
+            "name": "Plásticos SEMPI, Fábrica y Distribuidora de Bolsas Plásticas, Papel y Ecológicas",
+            "located":[-33.4026524, -70.6537724],
+            "type":"plastics",
+            "adress": "El Roble 1048, Recoleta"
+        },
+        {
+            "name": "Plasticos",
+            "located":[-33.4354647, -70.6517155],
+            "type":"plastics",
+            "adress": "Paseo Puente 672, Santiago"
+        },
+        {
+            "name": "Textil Sumey",
+            "located":[-33.4314842, -70.6323018],
+            "type":"textil",
+            "adress": "Antonia López de Bello 285, Providencia"
+        },
+        {
+            "name": "Textil Circutex S.A",
+            "located": [-33.4232304, -70.6460158],
+            "type": "textil",
+            "adress": "Dr. Raimundo Charlin 666, Recoleta" 
+        },
+        {
+            "name": "Textil Los Andes",
+            "located": [-33.4267424, -70.6521741],
+            "type": "textil",
+            "adress": "Dávila Baeza 953, Independencia"
+        },
+        {
+            "name": "Fabrica de Bandejas María Angelica Vanni",
+            "located": [-33.432199, -70.6474128],
+            "type": "paperboard",
+            "adress": "Bellavista 575, Providencia"
+        },
+        {
+            "name": "T Y T Muebles Y Juguetes Limitada",
+            "located": [-33.4315313, -70.6395381],
+            "type": "paperboard",
+            "adress": "Bombero Núñez 217, Recoleta"
+        },
+        {
+            "name": "Vidrios y Aluminios",
+            "located": [-33.419688, -70.6756272],
+            "type": "vidrios",
+            "adress": "Gamero 1860, Independencia" 
+        },
+        {
+            "name": "Algaze Vidrios y Aluminios",
+            "located": [-33.410691, -70.6433559],
+            "type": "vidrios",
+            "adress": "Dr. Ostornol 465, Recoleta" 
+        },
+        {
+            "name": "Comercializadora De Productos Tecnologicos Digital",
+            "located": [-33.4338722, -70.6532439],
+            "type": "technology",
+            "adress": "Bandera 566, Santiago"
+        },
+        {
+            "name": "Productos Tecnologicos Tu Norte Limitada",
+            "located": [-33.4145829, -70.636856],
+            "type": "technology",
+            "adress": "Eloisa Lemus 1536, Recoleta"
+        }
+        
+    ]
+}
