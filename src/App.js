@@ -40,7 +40,9 @@ class App extends Component {
                     zoom="13"
                     image={this.state.image }
                     listCompany={this.state.companies}
+                    update={this.getValue}
                     />  
+                <Login/>
                         
             </div>
         );

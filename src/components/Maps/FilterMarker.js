@@ -5,7 +5,7 @@ class FilterMarker extends Component{
 
     constructor(props) {
         super(props);
-
+        this.update=this.update.bind(this);
         this.state = {
             app_id: props.app_id,
             app_code: props.app_code,
@@ -184,7 +184,9 @@ class FilterMarker extends Component{
         this.state.markerGlass.forEach(glass => {
             let marker = new  window.H.map.Marker({lat: glass.position[0], lng: glass.position[1]})
             this.map.addObject(marker);
-            tempArray.push(marker)
+            tempArray.push(marker);
+            // add 'tap' event listener, that opens info bubble, to the group
+            marker.addEventListener('tap', this.update.bind(this, glass), false);
         });
         this.setState({
             ...this.state,
@@ -202,7 +204,9 @@ class FilterMarker extends Component{
         this.state.markerPaperboard.forEach(paperboard => {
             let marker = new  window.H.map.Marker({lat: paperboard.position[0], lng: paperboard.position[1]})
             this.map.addObject(marker);
-            tempArray.push(marker)
+            tempArray.push(marker);
+            // add 'tap' event listener, that opens info bubble, to the group
+            marker.addEventListener('tap', this.update.bind(this, paperboard), false);
         });
         this.setState({
             ...this.state,
@@ -217,7 +221,9 @@ class FilterMarker extends Component{
         this.state.markerPlastics.forEach(plastics => {
             let marker = new  window.H.map.Marker({lat: plastics.position[0], lng: plastics.position[1]})
             this.map.addObject(marker);
-            tempArray.push(marker)
+            tempArray.push(marker);
+            // add 'tap' event listener, that opens info bubble, to the group
+            marker.addEventListener('tap', this.update.bind(this, plastics), false);
         });
 
         this.setState({
@@ -234,7 +240,9 @@ class FilterMarker extends Component{
             let marker = new  window.H.map.Marker({lat: technology.position[0], lng: technology.position[1]})
             this.map.addObject(marker);
 
-            tempArray.push(marker)
+            tempArray.push(marker);
+            // add 'tap' event listener, that opens info bubble, to the group
+            marker.addEventListener('tap', this.update.bind(this, technology), false);
         });
 
         this.setState({
@@ -251,7 +259,10 @@ class FilterMarker extends Component{
         this.state.markerTextile.forEach(textile => {
             let marker = new  window.H.map.Marker({lat: textile.position[0], lng: textile.position[1]})
             this.map.addObject(marker);
-            tempArray.push(marker)
+            tempArray.push(marker);
+
+            // add 'tap' event listener, that opens info bubble, to the group
+            marker.addEventListener('tap', this.update.bind(this, textile), false);
         });
         this.setState({
             ...this.state,
@@ -259,7 +270,9 @@ class FilterMarker extends Component{
         })
     }
 
-
+    update(info){
+        this.props.update(info);
+    }
 
 shouldComponentUpdate(props, state) {
     this.changeTheme(props.image, props.style);
