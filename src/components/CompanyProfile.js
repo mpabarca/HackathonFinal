@@ -9,7 +9,7 @@ class CompanyProfile extends Component{
     render(){
         return(
             <Container id="container">
-                <Row className="rowMe" id="back"><i id="icon-back" class="fas fa-chevron-left"></i>VOLVER</Row>
+                <Row className="rowMe" ><button id="back"><i id="icon-back" class="fas fa-chevron-left"></i>VOLVER</button></Row>
                 <Row className="rowMe" id="row-tittle">
                     <Col id="tittle">Textil Sumey</Col>
                     <Col>

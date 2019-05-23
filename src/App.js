@@ -15,6 +15,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.getValueOnclick=this.getValueOnclick.bind(this);
+    this.getValueMarker=this.getValueMarker.bind(this);
     this.map=null;
     this.state = {
         image: 'normal.day',
@@ -27,6 +28,12 @@ class App extends Component {
     this.setState({
         activeMenu: e.target.getAttribute('value')
     })
+  }
+  getValueMarker(e){
+    this.setState({
+        activeMenu: e[0]
+    })
+
   }
     
 
@@ -50,7 +57,12 @@ class App extends Component {
                     zoom="13"
                     image={this.state.image }
                     listCompany={this.state.companies}
-                    update={this.getValueMap}
+                    update={this.getValueMarker}
+                />
+                }
+                {(this.state.activeMenu === 'company') &&
+                <CompanyProfile
+                    onClick={this.getValueOnclick}
                 />
                 }
                 
