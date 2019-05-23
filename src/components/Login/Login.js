@@ -8,6 +8,7 @@ class Login extends Component {
         return (
 
             <div className="background">
+            <img className="logo"src=" https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/logo%20hackathon.png"/>
                 <form className="form">
                     <div>
                         <p className="email">EMAIL</p>

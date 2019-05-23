@@ -29,15 +29,15 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <OwnLocation
+                {/* <OwnLocation
                     app_id="SqgXt9Xu4ZtrdyRXBAHw"
                     app_code="4_H5feYpb2trd0PaEdD_bQ"
                     zoom="15"
                     image={this.state.image }
                     listCompany={this.state.companies}
                     update={this.getValue}
-                />
-                <Login/>
+                /> */}
+                {/* <Login/> */}
                 {/* <Navbar/> */}
                 <Company/>
                 {/* <Footer/> */}
