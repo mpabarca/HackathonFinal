@@ -98,6 +98,8 @@
 }
 #row-horario{
     margin-bottom: 30px;
+    width: 300px;
+    transform: translateX(-10px);
 }
 #five{
     font-family: 'Roboto', sans-serif;
@@ -121,11 +123,28 @@
     margin-bottom: 30px;
 }
 .day{
+    z-index: 10;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+}
+#select-one{
+    position: absolute;
+    background: #FCE76C;
+    border-radius: 70px;
+    width: 48px;
+    height: 47px;
+    transform: translate(142px,-14px);
+}
+#select-two{
+    position: absolute;
+    background: #FCE76C;
+    border-radius: 70px;
+    width: 48px;
+    height: 47px;
+    transform: translate(46px,-14px);
 }
 #button{
     margin-left: 55px;
