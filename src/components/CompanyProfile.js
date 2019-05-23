@@ -9,7 +9,7 @@ class CompanyProfile extends Component{
     render(){
         return(
             <div id="container">
-                <Row id="back"><i id="icon-back" class="fas fa-chevron-left"></i>BACK</Row>
+                <Row id="back"><i id="icon-back" class="fas fa-chevron-left"></i>VOLVER</Row>
                 <Row id="row-tittle">
                     <Col id="tittle">Textil Sumey</Col>
                     <Col>
@@ -37,11 +37,11 @@ class CompanyProfile extends Component{
                 </Row>
                 <Row id="five">Entre 17:00 - 18:00</Row>
                 <Row id="row-info">
-                    <div>Dirección</div>
+                    <div id="direction">Dirección</div>
                     <div>Antonia López de Bello 285, Recoleta</div>
                     <div>Región Metropolitana</div>
                 </Row>
-                <Row id="button-profile"><Button variant="outline-primary">GENERAR RUTA</Button></Row>
+                <Row id="button"><Button variant="outline-primary">GENERAR RUTA</Button></Row>
             </div>
         )
     }

@@ -7,7 +7,7 @@ class Signin extends Component{
 
     render(){
         return(
-            <Container>
+            <div id="container">
                 <Row id="row-profile">
                     <Image id="signin-profile" src={profileCompany} roundedCircle />
                 </Row>
@@ -37,7 +37,7 @@ class Signin extends Component{
                     </Col>
                 </Row>
                 <Row id="button-profile"><Button variant="outline-primary">REGISTRAR</Button></Row>
-            </Container>
+            </div>
         )
     }
 }

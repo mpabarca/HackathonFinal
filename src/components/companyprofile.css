@@ -87,8 +87,14 @@
 }
 #row-info{
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    transform: translateX(-35px);
+    margin-top: 10px;
 }
 #row-horario{
     margin-bottom: 30px;
@@ -100,6 +106,9 @@
     font-size: 13px;
     line-height: 22px;
     margin-left: 60px;
+}
+#direction{
+    font-weight: bold;
 }
 #horario{
     margin-top: 15px;
@@ -117,4 +126,8 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+}
+#button{
+    margin-left: 55px;
+    margin-top: 25px;
 }

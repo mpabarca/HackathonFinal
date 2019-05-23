@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 #signin-profile{
     width: 120px;
     height: 120px;
@@ -62,9 +61,12 @@
     margin-left: 30px;
 }
 #button-profile{
-    margin-top: 60px;
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-left: 55px;
 }
 #button-profile Button{
     width: 185px;
+}
+#materiales, #icon-material{
+    transform: translateY(-10px);
 }
