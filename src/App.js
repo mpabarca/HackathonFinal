@@ -3,6 +3,7 @@ import Route from './components/Maps/Route';
 import OwnLocation from './components/Maps/OwnLocation';
 import {companies} from './companies.json'
 import Login from './components/Login/Login';
+import Navbar from './components/Navbar/Navbar'
 
 
 class App extends Component {
@@ -35,6 +36,7 @@ class App extends Component {
                     update={this.getValue}
                 />
                 <Login/>
+                <Navbar/>
             </div>
         );
     }
