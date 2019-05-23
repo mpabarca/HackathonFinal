@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+import '../Navbar/Navbar.css';
+import Button from 'react-bootstrap/Button';
 
 class FilterMarker extends Component{
 
@@ -271,43 +274,54 @@ class FilterMarker extends Component{
     }
 
     update(info){
-        this.props.update(info);
+        this.props.update(['company' ,info]);
     }
 
-shouldComponentUpdate(props, state) {
-    this.changeTheme(props.image, props.style);
-    return false;
-}
+    shouldComponentUpdate(props, state) {
+        this.changeTheme(props.image, props.style);
+        return false;
+    }
 
-//Cree una instancia de MapTileService para solicitar mosaicos base (es decir, base.map.api.here.com
-//aqui especificamos el estilo del mapa y como se mostrara
-changeTheme(image, style) {
-    var tiles = this.platform.getMapTileService({
-        'type': 'base'
-    });
-    var layer = tiles.createTileLayer(
-        'maptile',
-        image,
-        256,
-        'png', {
-            'style': 'flame'
-        }
-    );
-    this.map.setBaseLayer(layer);
-}
+    //Cree una instancia de MapTileService para solicitar mosaicos base (es decir, base.map.api.here.com
+    //aqui especificamos el estilo del mapa y como se mostrara
+    changeTheme(image, style) {
+        var tiles = this.platform.getMapTileService({
+            'type': 'base'
+        });
+        var layer = tiles.createTileLayer(
+            'maptile',
+            image,
+            256,
+            'png', {
+                'style': 'flame'
+            }
+        );
+        this.map.setBaseLayer(layer);
+    }
     render(){
         return(
             <div>
-                <div>
-                <button onClick={this.showPaperboardMarker}>Carton</button>
-                <button onClick={this.showPlasticsMarker}>Pásticos</button>
-                <button onClick={this.showGlassMarker} >Vidrios</button>
-                <button onClick={this.showTechonologyMarker}>Teconogía</button>
-                <button onClick={this.showTextileMarker}>Textil</button>
-            </div>
-            <div id = "here-map"
-                style = {{ width: '360px', height: '640px', background: 'grey'}}
-            />
+                <div className="navbarIcons">
+                    <Button className="glassBtn " variant="outline-ligth" onClick={this.showGlassMarker}>
+                        <img  className="Icon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/vidrio-letra.png" />
+                    </Button>
+                    <Button className="glassBtn " variant="outline-ligth" onClick={this.showTextileMarker}>
+                        <img  className="Icon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/tela-letra.png" />
+                    </Button>
+                    <Button className="glassBtn " variant="outline-ligth" onClick={this.showPlasticsMarker}>
+                        <img  className="Icon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/plastico-letra.png" />
+                    </Button>
+                    <Button className="glassBtn " variant="outline-ligth" onClick={this.showPaperboardMarker}>
+                        <img  className="Icon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/papel-letra.png" />
+                    </Button>
+                    <Button className="glassBtn " variant="outline-ligth" onClick={this.showTechonologyMarker}>
+                        <img  className="Icon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/celulares-letra.png" />
+                    </Button>
+                </div>
+                <div id = "here-map"
+                    style = {{ width: '360px', height: '450px', background: 'grey'}}
+                />
+                <Footer/>
             
             </div>
         )
