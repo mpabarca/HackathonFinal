@@ -6,7 +6,7 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #row-profile{
-    margin-left: 110px;
+    margin-left: 90px;
     margin-top: 20px;
 }
 #row-form{
@@ -23,7 +23,11 @@
 #col-tittle{
     padding-left: 0;
     padding-right: 0;
-
+}
+#col-name{
+    padding-left: 0;
+    transform: translateX(-10px);
+    padding-right: 0;
 }
 .icon{
     width: 20px;
@@ -34,10 +38,11 @@
     height: 20px;
     margin-bottom: 40px;
     border-bottom: 1px solid #D5DBDB ;
-    font-size: 13px;
+    font-size: 12px;
 }
 .input{
     height: 20px;
+    width: 130px;
     margin-bottom: 40px;
     border-bottom: 1px solid #D5DBDB ;
     padding-left: 10px;

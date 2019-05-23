@@ -5,11 +5,16 @@
     padding-left: 40px;
 }
 #profile{
-    margin-top: 15px;
-    margin-left: 20px;
-    width: 100px;
-    height: 100px;
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 50px;
+    height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#tela-icon{
+    width: 40px;
+    height: 45px;
+    margin-left: 30px;
 }
 #back{
     font-family: 'Roboto', sans-serif;
@@ -30,7 +35,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 60px;
 }
 #row-text{
@@ -38,16 +43,24 @@
     margin-bottom: 20px;
 }
 .text{
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 22px;
     color: #262628;
+    margin-left: 15px;
+}
+#mayorista{
+    margin-left: 5px;
+}
+#recoleta{
+    margin-left: 15px;
 }
 #row-type{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     width: 360px;
+    height: 80px;
     padding-left: 20px;
     transform: translateX(-25px);
     padding-bottom: 20px;
@@ -55,5 +68,53 @@
 }
 #icon-type{
     display: flex;
-    align-content: center;
+    transform: translateY(15px);
+}
+#col-info{
+    width: 120px;
+    padding-right: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-left: 30px;
+    transform: translateY(-5px);
+    border-right: 1px solid #E5E7E9  ;
+}
+#row-info{
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+#row-horario{
+    margin-bottom: 30px;
+}
+#five{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 22px;
+    margin-left: 60px;
+}
+#horario{
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+.day{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
 }
