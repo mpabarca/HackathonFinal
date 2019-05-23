@@ -11,13 +11,12 @@
     margin-right: 0 !important;
 }
 #back{
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 16px;
-    width: 90%;
     padding-left: 8%;
     margin-top:10%;
+    background: #fff;
+    border: none
 }
 #row-tittle{
     width: 90%;

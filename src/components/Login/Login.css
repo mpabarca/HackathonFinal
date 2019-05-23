@@ -1,11 +1,11 @@
 
 .background{
     background: linear-gradient( #5BC5BC, #ffff, #fff); 
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 .form{
-    padding-top: 150px;
+    padding-top: 130px;
 }
 
 .input{
@@ -43,7 +43,7 @@
     font-family: 'Roboto', sans-serif;
     color:gray; 
     margin-bottom: 15px;
-    margin-left: 88px;
+    margin-left: 110px;
 }
 .btnLogin{
     font-family: 'Roboto', sans-serif; 
@@ -53,10 +53,13 @@
 }
 .btnSingin{
     font-family: 'Roboto', sans-serif; 
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     margin-left: 113px;
 }
 .logo{
     margin-top:30px;
     margin-left: 95px;
+}
+.btnsLogin{
+    margin-bottom: 5px;
 }

@@ -18,10 +18,11 @@ const Login = (props) =>{
                     <input className="input" type="password" className="input2" placeholder="•••••••••"></input>
                     </div>
             </form>
+            <div className="btnsLogin">
             <Button variant="outline-primary" className="btnLogin" value="signin" onClick={props.onClick}>Registrarte</Button>
             <p className="text">¿Ya tienes una cuenta?</p>
             <Button variant="outline-primary" value="login" onClick={props.onClick} className="btnSingin">Iniciar Sesión</Button>
-
+            </div>
         </div>
     )
 }
