@@ -14,7 +14,7 @@ class Login extends Component {
                         <input type="text" className="input"></input></div>
                     <div>
                         <p className="password">CONTRASEÑA</p>
-                        <input type="text" className="input2"></input>
+                        <input className="input" type="text" className="input2"></input>
                         </div>
                 </form>
                 <Button variant="outline-primary" className="btnLogin">Registrarte</Button>

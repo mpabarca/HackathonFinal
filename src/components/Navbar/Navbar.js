@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() {
         return (
             <div className="container">
-            <div className="bla">
+            <div className="navbarIcons">
                 <Button className="glassBtn " variant="outline-ligth" >
                     <img  className="Icon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/vidrio-letra.png" />
                 </Button>
