@@ -31,7 +31,7 @@ class App extends Component {
     render() {
         return (
             <div id="App">
-                <Signin/>
+                <CompanyProfile/>
             </div>
         );
     }
