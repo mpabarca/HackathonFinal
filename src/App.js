@@ -4,6 +4,7 @@ import OwnLocation from './components/Maps/OwnLocation';
 import {companies} from './companies.json'
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
                 />
                 <Login/>
                 <Navbar/>
+                <Footer/>
             </div>
         );
     }
