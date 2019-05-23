@@ -1,0 +1,38 @@
+.companyBody{
+    height: 100vh;
+    width: 100%;
+}
+.fa-clock{
+    width: 30px;
+}
+.upIcons{
+    /* position:fixed;
+    display: flex;
+    flex-flow:row wrap;
+    bottom:0px; */
+    color:gray; 
+    justify-content: flex-start;
+    /* margin-top: 20px; */
+    padding-left: 5px;
+}
+.back{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.input{
+    border-top:none;
+    border-left: none;
+    border-right: none;
+}
+
+.companyText{
+    font-family: 'Roboto', sans-serif;
+    color:gray;
+}
+.textBackground{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    color: #5BC5BC;
+
+}

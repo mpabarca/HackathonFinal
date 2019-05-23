@@ -1,0 +1,28 @@
+.iconsFooter{
+    position:fixed;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+    bottom:0px;
+    align-items: center;
+    width:100%;
+    height: 40px;
+    background:#fff;
+
+}
+
+.iconsFooter i{
+    font-size: 20px;
+}
+
+.fal .fas{
+    display: flex;
+    color:white;
+}
+.fa-plus-circle{
+    color:#FCE76C;
+}
+
+.color{
+    color:#757575;
+}

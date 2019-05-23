@@ -1,0 +1,14 @@
+.navbarIcons{
+    height: 50px;;
+    width: 100%;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-evenly;
+}
+
+.Icon{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+    height:auto;
+}
