@@ -71,7 +71,7 @@
 #button{
     width: 90%;
     margin-top: 25px;
-    padding-left: 100px;
+    padding-left: 80px;
 }
 
 /* Elementos */
@@ -154,5 +154,7 @@
 #select-two{
     transform: translate(44px,-16px);
 }
-
+#button Button{
+    width: 200px;
+}
 
