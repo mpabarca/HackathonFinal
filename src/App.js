@@ -9,6 +9,10 @@ import Footer from './components/Footer/Footer';
 import Company from './components/formulario empresa/Company'
 import Signin from './components/signin/Signin';
 import CompanyProfile from './components/CompanyProfile';
+// import Map from './components/Maps/Map';
+import FilterMarket from './components/Maps/FilterMarker';
+import {companies} from './components/Maps/companies.json';
+
 
 class App extends Component {
   constructor(props) {
@@ -30,8 +34,15 @@ class App extends Component {
 
     render() {
         return (
-            <div id="App">
-                <CompanyProfile/>
+            <div className="App">
+                <FilterMarket
+                    app_id="SqgXt9Xu4ZtrdyRXBAHw"
+                    app_code="4_H5feYpb2trd0PaEdD_bQ"
+                    zoom="13"
+                    image={this.state.image }
+                    listCompany={this.state.companies}
+                    />  
+                        
             </div>
         );
     }
