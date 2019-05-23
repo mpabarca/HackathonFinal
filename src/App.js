@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Route from './components/Maps/Route';
 import OwnLocation from './components/Maps/OwnLocation';
+import './index.css';
 import {companies} from './companies.json'
 import Signin from './components/signin/Signin';
 import CompanyProfile from './components/CompanyProfile';
@@ -26,7 +27,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div id="App">
                 <CompanyProfile/>
             </div>
         );
