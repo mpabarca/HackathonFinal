@@ -31,9 +31,9 @@
     ]
   },
   "devDependencies": {
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
-    "gh-pages": "^2.0.1"
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
+    "react-bootstrap": "^1.0.0-beta.8"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",

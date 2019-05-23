@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './Signin.css';
+import './Login.css';
 
-class Signin extends Component {
-
+class Login extends Component {
     render() {
         return(
 
@@ -21,8 +20,9 @@ class Signin extends Component {
             <p className="text">¿Ya tienes una cuenta?</p>
             <button>Iniciar Sesión</button>
             </div>
+            
         )
     }
 }
 
-export default Signin;
+export default Login;
