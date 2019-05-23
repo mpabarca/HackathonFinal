@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import Footer from '../Footer/Footer';
 import '../Navbar/Navbar.css';
 import Button from 'react-bootstrap/Button';
+import '../Footer/Footer.css';
 
 class FilterMarker extends Component{
 
     constructor(props) {
         super(props);
         this.update=this.update.bind(this);
+        this.updateOnclick=this.updateOnclick.bind(this);
         this.state = {
             app_id: props.app_id,
             app_code: props.app_code,
@@ -275,6 +276,10 @@ class FilterMarker extends Component{
     update(info){
         this.props.update(['company' ,info]);
     }
+    updateOnclick(e){
+        e.preventDefault();
+        this.props.updateOnclick(e.target.value);
+    }
 
     shouldComponentUpdate(props, state) {
         this.changeTheme(props.image, props.style);
@@ -318,10 +323,9 @@ class FilterMarker extends Component{
                     </Button>
                 </div>
                 <div id = "here-map"
-                    style = {{ width: '360px', height: '450px', background: 'grey'}}
+                    style = {{ width: '360px', height: '590px', background: 'grey'}}
                 />
-                <Footer/>
-            
+                <button value="addCompany" onClick={this.updateOnclick} id="iconFooter"><i class="fas fa-plus-circle"></i></button>
             </div>
         )
     }

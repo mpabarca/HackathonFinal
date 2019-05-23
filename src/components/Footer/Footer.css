@@ -1,28 +1,15 @@
-.iconsFooter{
-    position:fixed;
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-evenly;
-    bottom:0px;
-    align-items: center;
-    width:100%;
-    height: 40px;
-    background:#fff;
-
+#iconFooter{
+    position: absolute;
+    transform: translateY(-5px);
+    bottom: 0;
+    z-index: 30;
+    margin-left: 150px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    background: #fff;
 }
-
-.iconsFooter i{
-    font-size: 20px;
-}
-
-.fal .fas{
-    display: flex;
-    color:white;
-}
-.fa-plus-circle{
-    color:#FCE76C;
-}
-
-.color{
-    color:#757575;
+#iconFooter i{
+    font-size: 55px;
+    transform: translateX(-5px);
 }

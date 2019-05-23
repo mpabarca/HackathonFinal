@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import Route from './components/Maps/Route';
-import OwnLocation from './components/Maps/OwnLocation';
 import './index.css';
 import Login from './components/Login/Login';
-import Company from './components/formulario empresa/Company'
+import Company from './components/formulario empresa/Company';
 import Signin from './components/signin/Signin';
 import CompanyProfile from './components/CompanyProfile';
 // import Map from './components/Maps/Map';
@@ -16,6 +14,7 @@ class App extends Component {
     super(props);
     this.getValueOnclick=this.getValueOnclick.bind(this);
     this.getValueMarker=this.getValueMarker.bind(this);
+    this.getValue=this.getValue.bind(this);
     this.map=null;
     this.state = {
         image: 'normal.day',
@@ -32,6 +31,11 @@ class App extends Component {
   getValueMarker(e){
     this.setState({
         activeMenu: e[0]
+    })
+  }
+  getValue(e){
+    this.setState({
+        activeMenu: e
     })
 
   }
@@ -58,10 +62,16 @@ class App extends Component {
                     image={this.state.image }
                     listCompany={this.state.companies}
                     update={this.getValueMarker}
+                    updateOnclick={this.getValue}
                 />
                 }
                 {(this.state.activeMenu === 'company') &&
                 <CompanyProfile
+                    onClick={this.getValueOnclick}
+                />
+                }
+                {(this.state.activeMenu === 'addCompany') &&
+                <Company
                     onClick={this.getValueOnclick}
                 />
                 }
