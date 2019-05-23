@@ -6,9 +6,6 @@ class FilterMarker extends Component{
     constructor(props) {
         super(props);
 
-        this.platform = null;
-        this.map = null;
-
         this.state = {
             app_id: props.app_id,
             app_code: props.app_code,
@@ -21,24 +18,28 @@ class FilterMarker extends Component{
             markerPaperboard: [],
             markerPlastics: [],
             markerTechnology: [],
-            markerGender: [],
+            markerTextile: [],
+            objectsToEliminate1: [],
+            
+
             
         }
         this.showGlassMarker=this.showGlassMarker.bind(this);
         this.showPaperboardMarker=this.showPaperboardMarker.bind(this);
         this.showPlasticsMarker=this.showPlasticsMarker.bind(this);
         this.showTechonologyMarker=this.showTechonologyMarker.bind(this);
-        this.showGenderMarker=this.showGenderMarker.bind(this);
+        this.showTextileMarker=this.showTextileMarker.bind(this);
     }
 
 
     
+
     getPlatform() {return new window.H.service.Platform(this.state);}
     getMap(container, layers, settings) {return new window.H.Map(container, layers, settings);}
     getEvents(map) {return new window.H.mapevents.MapEvents(map);}
     getUI(map, layers) {return new window.H.ui.UI.createDefault(map, layers);}
-
     componentDidMount() {
+
         let getPosition = () => {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(
@@ -54,8 +55,7 @@ class FilterMarker extends Component{
                         var circle = new window.H.map.Circle(
                         new window.H.geo.Point(position.coords.latitude, position.coords.longitude),1000,{stylePto: stylePto} );
                         circle.setData('Circle');
-                        var container = new window.H.map.Group({objects: [circle]});
-                        this.map.addObject(container);
+                        this.map.addObject(circle);
 
                     },
                     (error) => this.setState({
@@ -64,6 +64,9 @@ class FilterMarker extends Component{
                 );
             }
         };
+
+        
+
         //aqui se llaman todos los estados
         this.platform = this.getPlatform();
         //aqui se configura el tipo de mapa
@@ -160,77 +163,99 @@ class FilterMarker extends Component{
                 .then(data => data.json())
                 .then(data => {
                 // console.log(data)
-                let genderPosition = data.results.filter(gender => {
-                        return gender.position;
+                let textilePosition = data.results.filter(textile => {
+                        return textile.position;
                     })
-                        return genderPosition;
+                        return textilePosition;
                     })
                     .then(data => {
                         this.setState({
                         ...this.state,
-                        markerGender: data, 
+                        markerTextile: data, 
                         }, 
                             
                         )})                
         }
 
     showGlassMarker() {
-        //aqui hay que limpiar el mapa
+        this.map.removeObjects(this.state.objectsToEliminate1)
+        let tempArray = []
+
         this.state.markerGlass.forEach(glass => {
             let marker = new  window.H.map.Marker({lat: glass.position[0], lng: glass.position[1]})
             this.map.addObject(marker);
+            tempArray.push(marker)
         });
         this.setState({
             ...this.state,
-            markerGlass: [],
-            
+            objectsToEliminate1: tempArray
         })
+  
     }
 
+    
+
     showPaperboardMarker() {
+            this.map.removeObjects(this.state.objectsToEliminate1)
+            let tempArray = []
         //aqui hay que limpiar el mapa
         this.state.markerPaperboard.forEach(paperboard => {
             let marker = new  window.H.map.Marker({lat: paperboard.position[0], lng: paperboard.position[1]})
             this.map.addObject(marker);
+            tempArray.push(marker)
         });
         this.setState({
             ...this.state,
-            markerPaperboard: []
+            objectsToEliminate1: tempArray 
         })
     }
 
     showPlasticsMarker() {
+            this.map.removeObjects(this.state.objectsToEliminate1)
+            let tempArray= [];
+
         this.state.markerPlastics.forEach(plastics => {
             let marker = new  window.H.map.Marker({lat: plastics.position[0], lng: plastics.position[1]})
             this.map.addObject(marker);
+            tempArray.push(marker)
         });
 
         this.setState({
             ...this.state,
-            markerPlastics: []
+            objectsToEliminate1: tempArray
         })
     }
 
     showTechonologyMarker() {
-        this.state.markerTechnology.forEach(technology => {
+            this.map.removeObjects(this.state.objectsToEliminate1)
+            let tempArray = []
+
+            this.state.markerTechnology.forEach(technology => {
             let marker = new  window.H.map.Marker({lat: technology.position[0], lng: technology.position[1]})
             this.map.addObject(marker);
+
+            tempArray.push(marker)
         });
 
         this.setState({
             ...this.state,
-            markerTechnology: []
+            objectsToEliminate1: tempArray
         })
     }
 
-    showGenderMarker() {
-        this.state.markerGender.forEach(gender => {
-            let marker = new  window.H.map.Marker({lat: gender.position[0], lng: gender.position[1]})
+    showTextileMarker() {
+        this.map.removeObjects(this.state.objectsToEliminate1)
+        let tempArray = []
+
+
+        this.state.markerTextile.forEach(textile => {
+            let marker = new  window.H.map.Marker({lat: textile.position[0], lng: textile.position[1]})
             this.map.addObject(marker);
+            tempArray.push(marker)
         });
         this.setState({
             ...this.state,
-            markerGender: []
+            objectsToEliminate1: tempArray
         })
     }
 
@@ -265,7 +290,7 @@ changeTheme(image, style) {
                 <button onClick={this.showPlasticsMarker}>Pásticos</button>
                 <button onClick={this.showGlassMarker} >Vidrios</button>
                 <button onClick={this.showTechonologyMarker}>Teconogía</button>
-                <button onClick={this.showGenderMarker}>Textil</button>
+                <button onClick={this.showTextileMarker}>Textil</button>
             </div>
             <div id = "here-map"
                 style = {{ width: '360px', height: '640px', background: 'grey'}}
