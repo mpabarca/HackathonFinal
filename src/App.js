@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Map from './components/Maps/Map';
-import OwnLocation from './components/Maps/OwnLocation';
-import {companies} from './companies.json'
+// import Map from './components/Maps/Map';
+import FilterMarket from './components/Maps/FilterMarker';
+import {companies} from './components/Maps/companies.json';
 
 
 class App extends Component {
@@ -23,15 +23,14 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <OwnLocation
+                <FilterMarket
                     app_id="SqgXt9Xu4ZtrdyRXBAHw"
                     app_code="4_H5feYpb2trd0PaEdD_bQ"
                     zoom="13"
                     image={this.state.image }
                     listCompany={this.state.companies}
-                />
-                
-                
+                    />  
+                        
             </div>
         );
     }
