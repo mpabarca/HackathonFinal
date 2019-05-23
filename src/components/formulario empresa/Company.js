@@ -6,7 +6,7 @@ class Company extends Component {
     render() {
         return(
             <div>
-                
+                <img className="arrowIcon" src="https://raw.githubusercontent.com/marianacarbonell/HackathonFinal/master/bocetos/Shape.png" />
             </div>
         )
     }

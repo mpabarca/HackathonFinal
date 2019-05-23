@@ -5,6 +5,7 @@ import {companies} from './companies.json'
 import Login from './components/Login/Login';
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer';
+import Company from './components/formulario empresa/Company'
 
 
 class App extends Component {
@@ -37,8 +38,9 @@ class App extends Component {
                     update={this.getValue}
                 />
                 <Login/>
-                <Navbar/>
-                <Footer/>
+                {/* <Navbar/> */}
+                <Company/>
+                {/* <Footer/> */}
             </div>
         );
     }
