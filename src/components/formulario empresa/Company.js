@@ -5,7 +5,7 @@ import { Row, Col, Button } from 'react-bootstrap';
 const Company = (props) => {
     return (
         <div className="companyBody">
-            <Row className="upIcons" ><button id="backIcon" value="signin-check" onClick={props.onClick}><i id="icon-back" class="fas fa-chevron-left"></i>VOLVER</button></Row>
+            <Row className="upIcons" ><button id="backIcon" style={{backgroundColor:"transparent", border:"none"}} value="signin-check" onClick={props.onClick}><i id="icon-back" class="fas fa-chevron-left"></i>VOLVER</button></Row>
             <Row className="share">Comparte tu dato de material reutilizable</Row>
             <Row>
                 <Col xs="2">
