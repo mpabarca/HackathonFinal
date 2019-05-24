@@ -58,20 +58,19 @@
 }
 #materiales{
     font-size: 13px;
+    transform: translate(-30px,-5px);
 }
 #icon-material{
     margin-left: 30px;
+    transform: translateY(-10px);
 }
 #button-profile{
     width: 50%;
-    margin-top: 10px !important;
+    margin-top: 5px !important;
     margin-left: 85px !important;
 }
 #button-profile Button{
     width: 185px;
-}
-#materiales, #icon-material{
-    transform: translateY(-10px);
 }
 .icon-signin{
     width: 50px;

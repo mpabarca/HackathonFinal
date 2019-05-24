@@ -30,7 +30,7 @@ const CompanyProfile = (props) =>{
                     <Col className="day">L</Col>
                     <Col className="day">M</Col>
                     <div id="select-one"></div>
-                    <Col className="day">W</Col>
+                    <Col className="day">M</Col>
                     <Col className="day">J</Col>
                     <div id="select-two"></div>
                     <Col className="day">V</Col>
