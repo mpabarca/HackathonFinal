@@ -5,14 +5,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 #row-profile{
-    margin-left: 110px;
-    margin-top: 20px;
+    margin-left: 110px !important;
+    margin-top: 20px !important;
 }
 #row-form{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: 20px !important;
     width: 80%;;
 }
 #col-icon{
@@ -38,14 +38,16 @@
     margin-bottom: 40px;
     border-bottom: 1px solid #D5DBDB ;
     font-size: 12px;
+    
 }
 .input{
     height: 20px;
-    width: 130px;
+    width: 100%;
     margin-bottom: 40px;
     border-bottom: 1px solid #D5DBDB ;
     padding-left: 10px;
     font-size: 13px;
+    min-width: 150px !important;
 }
 .tittle , .input, #materiales{
     font-family: 'Roboto', sans-serif;
@@ -62,12 +64,18 @@
 }
 #button-profile{
     width: 50%;
-    margin-top: 10px;
-    margin-left: 85px;
+    margin-top: 10px !important;
+    margin-left: 85px !important;
 }
 #button-profile Button{
     width: 185px;
 }
 #materiales, #icon-material{
+    transform: translateY(-10px);
+}
+.icon-signin{
+    width: 50px;
+    height: 55px;
+    margin-right: 10px;
     transform: translateY(-10px);
 }

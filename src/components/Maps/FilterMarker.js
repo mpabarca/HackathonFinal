@@ -323,7 +323,7 @@ class FilterMarker extends Component{
                     </Button>
                 </div>
                 <div id = "here-map"
-                    style = {{ width: '360px', height: '590px', background: 'grey'}}
+                    style = {{ width: '360px', height: '570px', background: 'grey'}}
                 />
                 <button value="addCompany" onClick={this.updateOnclick} id="iconFooter"><i class="fas fa-plus-circle"></i></button>
             </div>

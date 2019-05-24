@@ -6,9 +6,11 @@
 }
 .form{
     padding-top: 130px;
+    width: 80%;
+    margin-left: 71px;
 }
 
-.input{
+.input-login{
     
     margin-left:10px;
     border-top:none;

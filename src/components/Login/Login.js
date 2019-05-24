@@ -11,11 +11,11 @@ const Login = (props) =>{
             <form className="form">
                 <div>
                     <p className="email">EMAIL</p>
-                    <input type="text" className="input" placeholder="sofia.t@gmail.com"></input>
+                    <input type="text" className="input-login" placeholder="sofia.t@gmail.com"></input>
                 </div>
                 <div>
                     <p className="password">CONTRASEÑA</p>
-                    <input className="input" type="password" className="input2" placeholder="•••••••••"></input>
+                    <input className="input-login" type="password" placeholder="•••••••••"></input>
                     </div>
             </form>
             <div className="btnsLogin">
