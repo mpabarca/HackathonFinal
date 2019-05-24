@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/HackathonFinal/static/css/main.1f109d4b.chunk.css",
-    "main.js": "/HackathonFinal/static/js/main.d342c265.chunk.js",
-    "main.js.map": "/HackathonFinal/static/js/main.d342c265.chunk.js.map",
+    "main.css": "/HackathonFinal/static/css/main.d779337d.chunk.css",
+    "main.js": "/HackathonFinal/static/js/main.d8857f42.chunk.js",
+    "main.js.map": "/HackathonFinal/static/js/main.d8857f42.chunk.js.map",
     "runtime~main.js": "/HackathonFinal/static/js/runtime~main.a07b57a6.js",
     "runtime~main.js.map": "/HackathonFinal/static/js/runtime~main.a07b57a6.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/HackathonFinal/static/css/2.22a7d4ef.chunk.css",
     "static/js/2.0dee04a0.chunk.js": "/HackathonFinal/static/js/2.0dee04a0.chunk.js",
     "static/js/2.0dee04a0.chunk.js.map": "/HackathonFinal/static/js/2.0dee04a0.chunk.js.map",
     "index.html": "/HackathonFinal/index.html",
-    "precache-manifest.5e876df3ba67d7d0e8550b0ab803aca3.js": "/HackathonFinal/precache-manifest.5e876df3ba67d7d0e8550b0ab803aca3.js",
+    "precache-manifest.30cc890dc3aa973df7216869ac4ba677.js": "/HackathonFinal/precache-manifest.30cc890dc3aa973df7216869ac4ba677.js",
     "service-worker.js": "/HackathonFinal/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/HackathonFinal/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.1f109d4b.chunk.css.map": "/HackathonFinal/static/css/main.1f109d4b.chunk.css.map",
+    "static/css/main.d779337d.chunk.css.map": "/HackathonFinal/static/css/main.d779337d.chunk.css.map",
     "static/media/profile-company.png": "/HackathonFinal/static/media/profile-company.4572de84.png",
     "static/media/tela-letra.png": "/HackathonFinal/static/media/tela-letra.fe53b7a8.png"
   }
